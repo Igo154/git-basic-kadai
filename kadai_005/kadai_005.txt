@@ -1,0 +1,55 @@
+igosh@LAPTOP-OGT0RKTR MINGW64 ~
+$ mkdir git_challenge
+
+igosh@LAPTOP-OGT0RKTR MINGW64 ~
+$ cd git_challemge
+bash: cd: git_challemge: No such file or directory
+
+igosh@LAPTOP-OGT0RKTR MINGW64 ~
+$ cd git_challenge
+
+igosh@LAPTOP-OGT0RKTR MINGW64 ~/git_challenge
+$ git init
+Initialized empty Git repository in C:/Users/igosh/git_challenge/.git/
+
+igosh@LAPTOP-OGT0RKTR MINGW64 ~/git_challenge (main)
+$ touch hello_world.txt
+
+igosh@LAPTOP-OGT0RKTR MINGW64 ~/git_challenge (main)
+$ echo Hello, world! > hello_world.txt
+
+igosh@LAPTOP-OGT0RKTR MINGW64 ~/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+igosh@LAPTOP-OGT0RKTR MINGW64 ~/git_challenge (main)
+$ git commit -m Hello, worldを追加
+[main (root-commit) 5c143d9] Hello, worldを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+
+igosh@LAPTOP-OGT0RKTR MINGW64 ~/git_challenge (main)
+$ echo こんにちは、世界！ >> hello_world.txt
+
+igosh@LAPTOP-OGT0RKTR MINGW64 ~/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+igosh@LAPTOP-OGT0RKTR MINGW64 ~/git_challenge (main)
+$ git commit -m こんにちは、世界！を追加
+[main 75808cf] こんにちは、世界！を追加
+ 1 file changed, 1 insertion(+)
+
+igosh@LAPTOP-OGT0RKTR MINGW64 ~/git_challenge (main)
+$ git log
+commit 75808cffd32b9f553e822e1972e8541deef5b260 (HEAD -> main)
+Author: Igo154 <ig0thello15@gmail.com>
+Date:   Wed Apr 29 19:46:09 2026 +0900
+
+    こんにちは、世界！を追加
+
+commit 5c143d9dcb019006745d99c39025542fefd1b291
+Author: Igo154 <ig0thello15@gmail.com>
+Date:   Wed Apr 29 19:44:28 2026 +0900
+
+    Hello, worldを追加
